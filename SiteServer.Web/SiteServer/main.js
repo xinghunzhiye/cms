@@ -88,9 +88,10 @@ var methods = {
 
     $this.create();
 
-    if ($this.isSuperAdmin) {
-      $this.getUpdates();
-    }
+    //hhx 20200225 注释检测更新
+    //if ($this.isSuperAdmin) {
+    //  $this.getUpdates();
+    //}
 
     setInterval(function () {
       var dif = new Date().getTime() - $this.lastExecuteTime.getTime();
